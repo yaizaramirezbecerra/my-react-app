@@ -1,0 +1,345 @@
+/* src/App.css */
+
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500&display=swap');
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f9fa;
+  color: #2d3436;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50;
+}
+
+/* Header Styles */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px;
+}
+
+header nav ul li a:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+header nav ul li button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 8px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px;
+}
+
+header nav ul li button:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+/* Home Section */
+#home {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom right, #f8f9fa, #e8eaf1);
+}
+
+#home h1 {
+  font-size: 3.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.2em;
+  max-width: 750px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.8;
+  padding: 0 20px;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+#skills h3 {
+  font-size: 1.7em;
+  color: #1abc9c;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Remove bullets from skill list items */
+#skills ul {
+  list-style-type: none; /* Removes bullet points */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#skills li {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#skills li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects Section */
+#projects {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+#projects h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.project-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 800px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+  font-size: 1.8em;
+  color: #1abc9c;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #555;
+}
+
+/* Experience Section */
+#experience {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  color: #2c3e50;
+  text-align: center;
+}
+
+#experience h2 {
+  font-size: 2.8em;
+  margin-bottom: 40px;
+  color: #1abc9c;
+  font-weight: 600;
+}
+
+.experience-item {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  background-color: #f9f9f9;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.experience-item h3 {
+  font-size: 1.8em;
+  color: #1abc9c;
+  margin-bottom: 8px;
+}
+
+.experience-item p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.experience-item ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.experience-item ul li {
+  margin: 8px 0;
+  color: #555;
+  padding-left: 20px;
+  position: relative;
+  font-size: 0.95em;
+}
+
+.experience-item ul li::before {
+  content: "•";
+  color: #1abc9c;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #experience h2 {
+    font-size: 2.4em;
+  }
+
+  .experience-item {
+    padding: 20px;
+  }
+
+  .experience-item h3 {
+    font-size: 1.6em;
+  }
+
+  .experience-item p {
+    font-size: 0.95em;
+  }
+
+  .experience-item ul li {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  #experience h2 {
+    font-size: 2em;
+  }
+
+  .experience-item h3 {
+    font-size: 1.4em;
+  }
+
+  .experience-item p {
+    font-size: 0.9em;
+  }
+
+  .experience-item ul li {
+    font-size: 0.85em;
+  }
+}
+
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #1abc9c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  header nav ul {
+    gap: 20px;
+  }
+
+  #home h1 {
+    font-size: 2.5em;
+  }
+
+  #skills ul {
+    gap: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 0;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #home h1 {
+    font-size: 2em;
+  }
+
+  #skills ul {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+}
